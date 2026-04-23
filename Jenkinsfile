@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building application...'
-            }
+                echo 'Building application'
+        }
         }
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                echo 'Running tests'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying to server...'
+                echo 'Deploying to server'
             }
         }
     }
