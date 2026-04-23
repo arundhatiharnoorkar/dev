@@ -1,16 +1,19 @@
 pipeline {
-    agent any
-
+    agent any 
     stages {
         stage('Build') {
             steps {
-                sh 'javac Calculator.java'
+                echo 'Building application...'
             }
-    }
-
-        stage('Execute') {
+        }
+        stage('Test') {
             steps {
-                sh 'java Calculator'
+                echo 'Running tests...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to server...'
             }
         }
     }
