@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Compile') {
             steps {
                 sh 'javac Calculator.java'
             }
